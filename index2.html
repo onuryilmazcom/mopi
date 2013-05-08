@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="css/ratchet.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+ 
+
+  <header class="bar-title">
+  <a class="button" href="#">
+    Left
+  </a>
+  <h1 class="title">Title</h1>
+  <a class="button" href="#">
+    Right
+  </a>
+</header>
+
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+
+    <div class="slider">
+  <ul>
+    <li>
+      <img src="img/slide-1.jpg">
+      <span class="slide-text">← Slide me</span>
+    </li>
+    <li>
+      <img src="img/slide-2.jpg">
+    </li>
+    <li>
+      <img src="img/slide-3.jpg">
+    </li>
+  </ul>
+</div>
+
+
+    <ul class="list inset">
+      <li>
+        <a href="http://maker.github.com/ratchet/">
+          <strong>Ratchet documentation</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.github.com/maker/ratchet/">
+          <strong>Ratchet on Github</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://groups.google.com/forum/#!forum/goratchet">
+          <strong>Ratchet Google group</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/GoRatchet">
+          <strong>Ratchet on Twitter</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+    </ul>
+
+
+
+<ul class="list">
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li class="list-divider">List Divider</li>
+  <li>List item 3</li>
+</ul>
+
+
+
+
+
+<ul class="list">
+  <li>
+    <a href="#">
+      List item 1
+      <span class="chevron"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      List item 2
+      <span class="chevron"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      List item 3
+      <span class="chevron"></span>
+    </a>
+  </li>
+</ul>
+
+
+
+
+<ul class="list">
+  <li>List item 1 <span class="count">4</span></li>
+  <li>List item 2 <span class="count">1</span></li>
+  <li>List item 3 <span class="count">5</span></li>
+</ul>
+
+
+<ul class="list">
+  <li>List item 1 <a class="button">Button</a></li>
+  <li>List item 2 <a class="button-main">Button</a></li>
+  <li>List item 3 <a class="button-positive">Button</a></li>
+  <li>List item 4 <a class="button-negative">Button</a></li>
+</ul>
+
+
+
+
+
+<ul class="list">
+  <li>
+    List item 1
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li>
+    List item 2
+    <div class="toggle active">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+  <li>
+    List item 3
+    <div class="toggle">
+      <div class="toggle-handle"></div>
+    </div>
+  </li>
+</ul>
+
+
+
+<a class="button">Button</a>
+<a class="button-main">Button</a>
+<a class="button-positive">Button</a>
+<a class="button-negative">Button</a>
+
+
+
+
+<a class="button-block">Block button</a>
+<a class="button-main button-block">Block button</a>
+<a class="button-positive button-block">Block button</a>
+<a class="button-negative button-block">Block button</a>
+
+
+
+
+
+
+<ul class="segmented-controller">
+  <li class="active">
+    <a href="#item1">Thing one</a>
+  </li>
+  <li>
+    <a href="#item2">Thing two</a>
+  </li>
+  <li>
+    <a href="#item3">Thing three</a>
+  </li>
+</ul>
+<ul class="inset list">
+  <li id="item1" class="segmented-controller-item active">
+    Item 1
+  </li>
+  <li id="item2" class="segmented-controller-item">
+    Item 2
+  </li>
+  <li id="item3" class="segmented-controller-item">
+    Item 3
+  </li>
+</ul>
+
+
+
+
+
+
+
+<form>
+  <input type="text" placeholder="Full name">
+  <input type="search" placeholder="Search">
+  <textarea rows="5"></textarea>
+  <a class="button button-block">Choose existing</a>
+</form>
+
+
+
+<form>
+  <div class="input-group">
+    <input type="text" placeholder="Full name">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Username">
+  </div>
+</form>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+<nav class="bar-tab">
+  <ul class="tab-inner">
+    <li class="tab-item active">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-home.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-profile.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-messages.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-hamburger.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+    <li class="tab-item">
+      <a href="#">
+        <img class="tab-icon" src="img/icon-settings.png">
+        <div class="tab-label">Label</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+  </body>
+</html>
