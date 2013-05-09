@@ -10,12 +10,18 @@
     <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+ 
     <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/min.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    
+    <style>
+    .blok { display: none; }
+    #sayfa1 { display: block; }
+    </style>
+
+   
 
   </head>
   <body>
@@ -27,7 +33,7 @@
   <a class="button" href="#">
     Left
   </a>
-  <h1 class="title">Title</h1>
+  <h1 class="title" id="log">Title</h1>
   <a class="button" href="#">
     Right
   </a>
@@ -37,21 +43,13 @@
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
 
-    <div class="slider">
-  <ul>
-    <li>
-      <img src="img/slide-1.jpg">
-      <span class="slide-text">← Slide me</span>
-    </li>
-    <li>
-      <img src="img/slide-2.jpg">
-    </li>
-    <li>
-      <img src="img/slide-3.jpg">
-    </li>
-  </ul>
-</div>
 
+
+<span class="blok" id="sayfa1">
+
+    <div class="content-padded">
+     
+    </div>
 
     <ul class="list inset">
       <li>
@@ -82,16 +80,6 @@
 
 
 
-<ul class="list">
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li class="list-divider">List Divider</li>
-  <li>List item 3</li>
-</ul>
-
-
-
-
 
 <ul class="list">
   <li>
@@ -116,95 +104,39 @@
 
 
 
+ <ul class="list inset">
+      <li>
+        <a href="http://maker.github.com/ratchet/">
+          <strong>Ratchet documentation</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.github.com/maker/ratchet/">
+          <strong>Ratchet on Github</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://groups.google.com/forum/#!forum/goratchet">
+          <strong>Ratchet Google group</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/GoRatchet">
+          <strong>Ratchet on Twitter</strong>
+          <span class="chevron"></span>
+        </a>
+      </li>
+    </ul>
 
-<ul class="list">
-  <li>List item 1 <span class="count">4</span></li>
-  <li>List item 2 <span class="count">1</span></li>
-  <li>List item 3 <span class="count">5</span></li>
-</ul>
 
-
-<ul class="list">
-  <li>List item 1 <a class="button">Button</a></li>
-  <li>List item 2 <a class="button-main">Button</a></li>
-  <li>List item 3 <a class="button-positive">Button</a></li>
-  <li>List item 4 <a class="button-negative">Button</a></li>
-</ul>
-
-
-
-
-
-<ul class="list">
-  <li>
-    List item 1
-    <div class="toggle">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-  <li>
-    List item 2
-    <div class="toggle active">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-  <li>
-    List item 3
-    <div class="toggle">
-      <div class="toggle-handle"></div>
-    </div>
-  </li>
-</ul>
+ </span>
 
 
 
-<a class="button">Button</a>
-<a class="button-main">Button</a>
-<a class="button-positive">Button</a>
-<a class="button-negative">Button</a>
-
-
-
-
-<a class="button-block">Block button</a>
-<a class="button-main button-block">Block button</a>
-<a class="button-positive button-block">Block button</a>
-<a class="button-negative button-block">Block button</a>
-
-
-
-
-
-
-<ul class="segmented-controller">
-  <li class="active">
-    <a href="#item1">Thing one</a>
-  </li>
-  <li>
-    <a href="#item2">Thing two</a>
-  </li>
-  <li>
-    <a href="#item3">Thing three</a>
-  </li>
-</ul>
-<ul class="inset list">
-  <li id="item1" class="segmented-controller-item active">
-    Item 1
-  </li>
-  <li id="item2" class="segmented-controller-item">
-    Item 2
-  </li>
-  <li id="item3" class="segmented-controller-item">
-    Item 3
-  </li>
-</ul>
-
-
-
-
-
-
-
+<span class="blok" id="sayfa2">
 <form>
   <input type="text" placeholder="Full name">
   <input type="search" placeholder="Search">
@@ -223,6 +155,14 @@
 </form>
 
 
+ </span>
+
+
+
+<span class="blok" id="sayfa3">
+ <p class="welcome">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resorces:</p>
+ </span>
+
 
   </div>
 
@@ -235,37 +175,54 @@
 
 <nav class="bar-tab">
   <ul class="tab-inner">
-    <li class="tab-item active">
-      <a href="#">
+
+    <li class="tab-item active" id="linksayfa1">
+      <a href="javascript:git('sayfa1');" >
         <img class="tab-icon" src="img/icon-home.png">
-        <div class="tab-label">Label</div>
+        <div class="tab-label">Listeler</div>
       </a>
     </li>
-    <li class="tab-item">
-      <a href="#">
+
+    <li class="tab-item" id="linksayfa2">
+     <a href="javascript:git('sayfa2');" >
         <img class="tab-icon" src="img/icon-profile.png">
-        <div class="tab-label">Label</div>
+        <div class="tab-label">Formlar</div>
       </a>
     </li>
-    <li class="tab-item">
-      <a href="#">
+    <li class="tab-item" id="linksayfa3">
+       <a href="javascript:git('sayfa3');" >
         <img class="tab-icon" src="img/icon-messages.png">
-        <div class="tab-label">Label</div>
+        <div class="tab-label">Boş</div>
       </a>
     </li>
-    <li class="tab-item">
-      <a href="#">
+    <li class="tab-item" id="linksayfa3">
+       <a href="javascript:git('sayfa3');" >
         <img class="tab-icon" src="img/icon-hamburger.png">
-        <div class="tab-label">Label</div>
+        <div class="tab-label">Boş</div>
       </a>
     </li>
-    <li class="tab-item">
-      <a href="#">
+    <li class="tab-item" id="linksayfa3">
+        <a href="javascript:git('sayfa3');" >
         <img class="tab-icon" src="img/icon-settings.png">
-        <div class="tab-label">Label</div>
+        <div class="tab-label">Boş</div>
       </a>
     </li>
   </ul>
 </nav>
+  <script src="js/zepto.js"></script>
+<script type="text/javascript">
+function git(sayfa) {
+    var start = new Date().getTime();
+
+     $('.blok').css({'display':'none'}) ;
+    $('#'+sayfa).css({'display':'block'}) ;
+    $(".tab-item").removeClass("active");
+    $('#link'+sayfa).addClass('active');
+
+   
+ 
+    $('#log').html(new Date().getTime() - start);
+}
+</script>
   </body>
 </html>
